@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5b3a00fa65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Name.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#interests">Interest's</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-sharp-duotone fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fresher</p>
+                <h1>Hi, I'm <span>Partha Sreekar</span> <br> from India</h1>
+            </div>
+        </div>
+    </div>
+
+<!--About-->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sreekar.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="title">About Me</h1>
+                <p>I am a recent Computer Science graduate with a deep enthusiasm for software development and data analysis. I am actively seeking an opportunity to work in a dynamic organization where I can apply my academic knowledge, learn new skills, and grow professionally. My goal is to contribute meaningfully to projects that not only challenge me but also help in honing my technical and problem-solving abilities. I am keen to collaborate with industry experts, gain hands-on experience, and evolve as a well-rounded professional in the tech field.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><Br>Designing Web/App interfaces</li>
+                        <li><span>Machine Learning</span><Br>Projects on Machine Learning</li>
+                        <li><span>Soft Skills</span><Br>Excellent verbal and written communication,stakeholder management<br>and attention to detail.</li>      
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX Intern</span><Br>Designing Web/App interfaces</li>          
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Btech 2020-2024</span><Br>Gandhi Institute of Technology and Management (Gitam Univeristy)</li>
+                        <li><span>Inter 2018-2020</span><Br>Narayana Junior College</li>
+                        <li><span>CBSE 2017-2018</span><Br>The Presidential School</li>            
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--interests-->
+<div id="interests">
+    <div class="container">
+        <h1 class="title">My Interest's</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full Stack Development</h2>
+                <p>Building scalable, responsive, and user-friendly web applications using modern frameworks and technologies.</p>  
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Data Science</h2>
+                <p>Extracting meaningful insights from data using machine learning models, visualization tools, and statistical techniques.</p>                
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Prompt Engineering</h2>
+                <p> Designing and optimizing AI prompts to enhance model performance and enable more accurate, context-aware responses in natural language processing applications.</p>    
+            </div>
+
+        </div>
+     </div>
+</div>
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/handloom.png">
+                <div class="layer">
+                    <h3>Athena-Local Commerce Platform</h3>
+                    <p> • Gathered business requirements and documented them in Business Requirement Documents (BRD).<br>
+                        • Designed Use Case, Class, and Workflow Diagrams to represent business processes.<br>
+                        • Applied Agile principles for iterative development, delivering features ahead of schedule.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Alz.png">
+                <div class="layer">
+                    <h3>Early Diagnosis of Alzheimer's Disease Using Handwriting Analysis</h3>
+                    <p>• Collected and analyzed 174 handwriting samples, achieving 90.5% accuracy using Random Forest and LGBM Classifier
+                        models.<br>
+                        • Applied PCA and Min-Max scaling to optimize the dataset and improve model performance.<br>
+                        • Validated model reliability through 5-fold cross-validation.</p>
+                    <a href="https://drive.google.com/drive/folders/1_JNyFcHj_WaEgaI12HpTCkQPP-sHptHP?usp=share_link"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Obs.png">
+                <div class="layer">
+                    <h3>Estimation of Obesity Levels Based on Eating Habits and Physical Conditions</h3>
+                    <p>• Processed 2,000+ rows of data and trained a Random Forest Classifier model with 92% accuracy.<br>
+                        • Reduced model training time by 20% through feature selection techniques.<br>
+                        • Presented results via interactive dashboards, enhancing stakeholder understanding by 50%.</p>
+                    <a href="https://drive.google.com/drive/folders/1LOqGl2URX6vnKiHs5xA5gBG51GPRr5JG?usp=share_link"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-duotone fa-solid fa-paper-plane"></i>syenugan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9866561339</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/partha-sreekar1205/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://wa.me/+9866561339"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/sreekar._.12/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/1205sreekar"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Partha_Sreekar_Resume.pdf" class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea rows="6" name= "Message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" >Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(var tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(var tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+        
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+        
+    }
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbz_PgE2_5SzWITOeRQMjExfwD_4WcHskDFwNu8mxui-VVvmjey0U_0I3A7dz6ZheI54-w/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
